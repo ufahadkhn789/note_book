@@ -1,17 +1,11 @@
 class Note {
-  String id;
+  final String id;
   String title;
-  String content;
-  DateTime createdAt;
+  String description;
 
   Note({
     required this.id,
     required this.title,
-    required this.content,
-    required this.createdAt,
+    required this.description,
   });
-
-  Note.create({required this.title, required this.content})
-      : id = DateTime.now().millisecondsSinceEpoch.toString(),
-        createdAt = DateTime.now();
 }
